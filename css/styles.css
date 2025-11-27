@@ -1,0 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+
+
+
+
+.logo {
+    font-family: "Ultra";
+    font-size: 3em;
+    margin-left: 120px;
+    text-decoration: none;
+    color: #ED9E75;
+}
+
+.logo-color-2 {
+    color: #D95560;
+}
+
+.logo-color-3 {
+    color: #7E7E7E;
+}
+
+.header-category {
+    font-family: "Ultra";
+    font-size: 2em;
+    color: #000;
+    text-decoration: none;
+    padding-right: 153px;
+}
+
+
+
+main {
+    margin: 0em;
+}
+
+body {
+    background-color: #ED9E75;
+    margin: 0em;
+}
+
+header {
+    background-color: #7E7E7E;
+    margin-top: 0;
+}
+
+nav ul {
+    display: inline-block;
+}
