@@ -1,31 +1,81 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
 
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/roboto/static/Roboto-Regular.ttf);
+}
 
 
 
 .logo {
     font-family: "Ultra";
-    font-size: 3em;
-    margin-left: 120px;
+    font-size: 2.5em;
+    margin-left: 7.5rem;
     text-decoration: none;
+    color: #ED9E75;
+    padding-right: 9.5625rem;
+}
+
+
+
+.torkoal-orange {
     color: #ED9E75;
 }
 
-.logo-color-2 {
+.torkoal-red {
     color: #D95560;
 }
 
-.logo-color-3 {
+.torkoal-gray {
     color: #7E7E7E;
 }
 
+.torkoal-brown {
+    color: #C6A37F;
+}
+
+.torkoal-black {
+    color: #000;
+}
+
+
+
 .header-category {
     font-family: "Ultra";
-    font-size: 2em;
+    font-size: 1.5em;
     color: #000;
     text-decoration: none;
-    padding-right: 153px;
+    padding-right: 9.5625rem;
+}
+
+.footer-category {
+    font-family: "Roboto";
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+    padding-right: 7.8125rem;
+}
+
+
+
+
+.torkoal-main {
+    border-style: solid;
+    border-radius: 57px;
+    border-color: #000;
+    height: 31.25rem;
+    margin-left: 7rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+
+
+#left-in-footer {
+    margin-left: 25%;
+    /*Probably not exact, so fix later*/
 }
 
 
@@ -42,8 +92,12 @@ body {
 header {
     background-color: #7E7E7E;
     margin-top: 0;
+    padding: 1.5em;
 }
 
-nav ul {
-    display: inline-block;
+footer {
+    background-color: #7E7E7E;
+    margin-bottom: 0;
+    padding: 1.5em;
 }
+
