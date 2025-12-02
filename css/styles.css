@@ -12,9 +12,9 @@
     font-family: "Ultra";
     font-size: 2.5em;
     margin-left: 7.5rem;
+    margin-right: 9.5625rem;
     text-decoration: none;
     color: #ED9E75;
-    padding-right: 9.5625rem;
 }
 
 
@@ -46,7 +46,7 @@
     font-size: 1.5em;
     color: #000;
     text-decoration: none;
-    padding-right: 9.5625rem;
+    margin-right: 9.5625rem;
 }
 
 .footer-category {
@@ -54,20 +54,58 @@
     font-size: 1em;
     color: #fff;
     text-decoration: none;
-    padding-right: 7.8125rem;
+    margin-right: 7.8125rem;
+}
+
+
+.active {
+   text-decoration: underline;
+    text-decoration-color: #D95560;
+    text-decoration-thickness: 0.25rem; 
 }
 
 
 
-
-.torkoal-main {
+.frame {
     border-style: solid;
     border-radius: 57px;
-    border-color: #000;
+    border-color: #000; 
+}
+
+.torkoal-main {
     height: 31.25rem;
     margin-left: 7rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    margin-right: 5rem;
+}
+
+.torkoal-mini {
+    background-color: #fff;
+    height: 18.75rem;
+}
+
+
+.mini-image {
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+    margin-right: 2rem;
+}
+
+
+.cta {
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 33px;
+    background-color: #D95560;
+    font-family: "Ultra";
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+
+.cta-main {
+    padding: 0.8rem;
 }
 
 
@@ -114,6 +152,15 @@ footer {
     margin-bottom: 0;
     padding: 1.5em;
 }
+
+
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: #ED9E75;
+    text-decoration-thickness: 0.25rem;
+}
+
+
 
 #generation-option a {
     color: #000;

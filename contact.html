@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Torkoalpedia | Home</title>
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="icon" href="css/images/favicon.ico">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="index.html" class="logo" >Tor<span class="torkoal-red">koal</span><span class="torkoal-black">pedia</span>
+                </a>
+                <a href="index.html" class="header-category">Home</a>
+                <a href="gallery.html" class="header-category">Gallery</a>
+            </nav>    
+        </header>
+
+        <main>
+            <fieldset>
+                <legend>Sign up to stay up to date:</legend>
+                <label for="firstname">First name:</label>
+                <input type="text" name="firstname" id="firstname">
+                <label for="lastname">Last name:</label>
+                <input type="text" name="lastname" id="lastname">
+                <label for="email">E-Mail:</label>
+                <input type="email" name="email" id="email">
+                
+                <fieldset>
+                    <legend>Gender: (optional)</legend>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="male" id="male" />
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" value="female" id="female" />
+                    <label for="non-binary">Non-binary</label>
+                    <input type="radio" name="gender" value="non-binary" id="non-binary" />
+                    <label for="other">Other</label>
+                    <input type="radio" name="gender" value="other" id="other" />
+                    <label for="prefer-not-to-say">Prefer not to say</label>
+                    <input type="radio" name="gender" value="prefer-not-to-say" id="prefer-not-to-say" />
+                </fieldset>
+
+            <label for="continent">Where are you from:</label>
+
+            <select name="continent" id="continent">
+                <option value="europe">Europe</option>
+                <option value="africa">Africa</option>
+                <option value="north-america">North-America</option>
+                <option value="south-america">South-America</option>
+                <option value="asia">Asia</option>
+                <option value="oceania">Oceania</option>
+            </select>
+            </fieldset>
+        </main>
+
+        <footer>
+            <a href="#" class="footer-category active" id="left-in-footer" >Contact us</a>
+            <a href="#" class="footer-category" >About us</a>
+            <a href="#" class="footer-category" >Terms of use</a>
+            <a href="#" class="footer-category" >Disclaimers</a>
+        </footer>
+    </body>
+
+</html>
