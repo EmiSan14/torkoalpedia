@@ -122,6 +122,30 @@
 
 
 
+.form {
+    font-family: "Roboto";
+    height: 31.25rem;
+    display: inline-block;
+    margin-left: 25%;
+}
+
+.form-2 {
+    border-style: none;
+    margin-left: 0px;
+    margin-top: 1rem;
+    padding-left: 0px;
+}
+
+.form-3 {
+    margin-top: 1rem;
+}
+
+.pad {
+    margin-top: 2rem;
+}
+
+
+
 
 
 
@@ -149,9 +173,18 @@ header {
 
 footer {
     background-color: #7E7E7E;
+    margin-top: 2rem;
     margin-bottom: 0;
     padding: 1.5em;
 }
+
+
+legend {
+    padding: 0;
+}
+
+
+
 
 
 nav a:hover {
