@@ -8,16 +8,11 @@
 
 
 
-.logo {
-    font-family: "Ultra";
-    font-size: 2.5em;
-    margin-left: 7.5rem;
-    margin-right: 9.5625rem;
-    text-decoration: none;
-    color: #ED9E75;
-}
 
 
+
+
+/* Colors */
 
 .torkoal-orange {
     color: #ED9E75;
@@ -41,6 +36,18 @@
 
 
 
+
+/* Header */
+
+.logo {
+    font-family: "Ultra";
+    font-size: 2.5em;
+    margin-left: 7.5rem;
+    margin-right: 9.5625rem;
+    text-decoration: none;
+    color: #ED9E75;
+}
+
 .header-category {
     font-family: "Ultra";
     font-size: 1.5em;
@@ -48,6 +55,18 @@
     text-decoration: none;
     margin-right: 9.5625rem;
 }
+
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: #ED9E75;
+    text-decoration-thickness: 0.25rem;
+}
+
+
+
+
+
+/* Footer */
 
 .footer-category {
     font-family: "Roboto";
@@ -58,13 +77,41 @@
 }
 
 
+
+
+
+
+/* Reusable classes */
+
 .active {
-   text-decoration: underline;
+    text-decoration: underline;
     text-decoration-color: #D95560;
     text-decoration-thickness: 0.25rem; 
 }
 
+.capitalize {
+    text-transform: capitalize;
+}
 
+.text-align-center {
+    text-align: center;
+}
+
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+
+
+
+
+
+/* Framing */
 
 .frame {
     border-style: solid;
@@ -72,26 +119,34 @@
     border-color: #000; 
 }
 
+
+
+
+
+
+
+/* Images */
+
 .torkoal-main {
-    height: 31.25rem;
-    margin-left: 7rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-right: 5rem;
+    
 }
 
 .torkoal-mini {
     background-color: #fff;
-    height: 18.75rem;
 }
 
 
 .mini-image {
-    margin-top: 2rem;
-    margin-bottom: 7rem;
-    margin-right: 2rem;
+    width: 45%;
 }
 
+
+
+
+
+
+
+/* Buttons */
 
 .cta {
     border-style: solid;
@@ -103,24 +158,178 @@
     text-transform: capitalize;
 }
 
-
 .cta-main {
-    padding: 0.8rem;
+    padding: 1em 5em;
+    font-size: larger;
 }
 
 
-.generations {
+
+
+
+
+
+/* Homepage */
+
+.home-flexbox {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.home-flexbox-small {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-content: space-around;
+}
+
+.home-flex-item-big {
+    display: flex;
+    width: 47%;
+    height: auto;
+    justify-content: space-between;
+}
+
+
+.home-mini-torkoal-flexbox {
+    display: flex;
+    justify-content: space-between;
+    flex: 3;
+}
+
+
+.home-h1 {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    font-family: "Ultra";
+    margin: 0;
+}
+
+.home-attention-grabber-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Ultra";
+    font-size: x-large;
+    margin: 0;
+    flex: 2;
+    gap: 0px;
+}
+
+.home-cta {
+    display: flex;
+    justify-content: center;
+}
+
+.home-flexbox p {
+    margin: 0;
+}
+
+
+
+
+
+
+/* Gallery */
+
+
+
+
+
+.gallery-flexbox {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.gallery-grid-item-big {
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: repeat(22, 1fr);
+    width: 30%;
     background-color: #fff;
     border-style: solid;
-    border-radius: 33px;
-    height: 31.25rem;
-    width: 24rem;
-    margin-left: 7rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    border-radius: 33px; 
 }
 
 
+
+
+#gen-in-game-information {
+    grid-area: 1 / 2 / 1 / 8;
+    text-align: center;
+    border-bottom: solid 1px #000;
+    font-size: 2em;
+}
+
+#gen-more {
+    grid-area: 9 / 1 / 9 / 9;
+    border-top: solid 1px #000;
+    font-size: 2em;
+}
+
+
+.gallery-grid-item-big a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto";    
+    color: #000;
+    font-size: large;
+    border-bottom: solid 1px #000;
+    border-top: solid 1px #000;
+}
+
+.gallery-grid-item-big h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.gen-3 {
+    grid-area: 2 / 1 / 2 / 9;
+}
+
+.gen-4 {
+    grid-area: 3 / 1 / 3 / 9;
+}
+
+.gen-5 {
+    grid-area: 4 / 1 / 4 / 9;
+}
+
+.gen-6 {
+    grid-area: 5 / 1 / 5 / 9;
+}
+
+.gen-7 {
+    grid-area: 6 / 1 / 6 / 9;
+}
+
+.gen-8 {
+    grid-area: 7 / 1 / 7 / 9;
+}
+
+.gen-9 {
+    grid-area: 8 / 1 / 8 / 9;
+}
+
+
+
+
+
+
+
+
+
+
+/* Contact Page */
 
 .form {
     font-family: "Roboto";
@@ -149,6 +358,10 @@
 
 
 
+
+
+/* IDs */
+
 #left-in-footer {
     margin-left: 25%;
     /*Probably not exact, so fix later*/
@@ -156,8 +369,15 @@
 
 
 
+
+
+
+
+/* Elements */
+
 main {
     margin: 0em;
+    padding: 75px 0px;
 }
 
 body {
@@ -179,6 +399,11 @@ footer {
 }
 
 
+img {
+    width: 100%;
+}
+
+
 legend {
     padding: 0;
 }
@@ -187,20 +412,10 @@ legend {
 
 
 
-nav a:hover {
-    text-decoration: underline;
-    text-decoration-color: #ED9E75;
-    text-decoration-thickness: 0.25rem;
-}
 
 
 
-#generation-option a {
-    color: #000;
-    font-family: "Roboto";
-    margin-left: 3em;
-    margin-right: 3em;
-    text-decoration: none;
-}
+
+
 
 
