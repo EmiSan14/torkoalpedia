@@ -21,7 +21,7 @@
 
         <main>
             <fieldset class="form frame pad">
-                <fieldset class="form-2 form-3">
+                <fieldset class="form-name-surname-email">
                     <legend>Sign up to stay up to date:</legend>
                     <label for="firstname">First name:</label>
                     <input type="text" name="firstname" id="firstname">
@@ -31,7 +31,7 @@
                     <input type="email" name="email" id="email">
                 </fieldset>
 
-                <fieldset class="form-2">
+                <fieldset class="form-gender">
                     <legend>Gender: (optional)</legend>
                     <label for="male">Male</label>
                     <input type="radio" name="gender" value="male" id="male" />
@@ -45,9 +45,9 @@
                     <input type="radio" name="gender" value="prefer-not-to-say" id="prefer-not-to-say" />
                 </fieldset>
 
-                <label for="continent">Where are you from:</label>
-
-                <select class="form-3" name="continent" id="continent">
+                <div class="form-continent">
+                    <label for="continent">Where are you from:</label>
+                    <select class="form-3" name="continent" id="continent">
                     <option value="europe">Europe</option>
                     <option value="africa">Africa</option>
                     <option value="north-america">North-America</option>
@@ -55,8 +55,9 @@
                     <option value="asia">Asia</option>
                     <option value="oceania">Oceania</option>
                 </select>
+                </div>
 
-                <fieldset class="form-2 form-3">
+                <fieldset class="form-button">
                     <label for="submit"></label> 
                     <input type="submit" class="cta cta-main" value="submit" id="submit" />
                 </fieldset> 
@@ -64,10 +65,13 @@
         </main>
 
         <footer>
-            <a href="#" class="footer-category active" id="left-in-footer" >Contact us</a>
-            <a href="#" class="footer-category" >About us</a>
-            <a href="#" class="footer-category" >Terms of use</a>
-            <a href="#" class="footer-category" >Disclaimers</a>
+            <div class="footer-container">
+                <a href="contact.html" class="footer-category" >Contact us</a>
+                <a href="#" class="footer-category" >About us</a>
+                <a href="#" class="footer-category" >Terms of use</a>
+                <a href="#" class="footer-category" >Disclaimers</a>
+            </div>
+            
         </footer>
     </body>
 

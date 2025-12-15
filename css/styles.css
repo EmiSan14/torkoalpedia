@@ -56,7 +56,9 @@
     margin-right: 9.5625rem;
 }
 
-nav a:hover {
+nav a:hover,
+.gallery-grid-item-big a:hover,
+footer a:hover {
     text-decoration: underline;
     text-decoration-color: #ED9E75;
     text-decoration-thickness: 0.25rem;
@@ -68,12 +70,18 @@ nav a:hover {
 
 /* Footer */
 
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 80%;
+}
+
 .footer-category {
     font-family: "Roboto";
     font-size: 1em;
     color: #fff;
     text-decoration: none;
-    margin-right: 7.8125rem;
 }
 
 
@@ -250,9 +258,10 @@ nav a:hover {
 .gallery-grid-item-big {
     display: grid;
     grid-template-columns: repeat(8, 12.5%);
-    grid-template-rows: repeat(22, 1fr);
+    grid-template-rows: repeat(9, 1fr);
     width: 30%;
-    background-color: #fff;
+    max-height: 816.6px;
+    background-color: #C6A37F;
     border-style: solid;
     border-radius: 33px; 
 }
@@ -260,35 +269,64 @@ nav a:hover {
 
 
 
-#gen-in-game-information {
-    grid-area: 1 / 2 / 1 / 8;
-    text-align: center;
-    border-bottom: solid 1px #000;
+.gallery-card-top {
+    grid-area: 1 / 1 / 1 / 9;
     font-size: 2em;
 }
 
-#gen-more {
-    grid-area: 9 / 1 / 9 / 9;
-    border-top: solid 1px #000;
-    font-size: 2em;
-}
-
-
-.gallery-grid-item-big a {
+.gallery-card-bottom {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Roboto";    
+    grid-area: 9 / 1 / 9 / 9;
+    border-top: solid 1px #000;
+    border-bottom: none;
+    font-size: 2em;
+    font-family: "Roboto";
+    color: #000;
+    background-color: #C6A37F;
+    border-bottom-left-radius: 33px;
+    border-bottom-right-radius: 32px;
+}
+
+#gen-option-top {
+    border-top: solid 3.5px #000;
+}
+
+#more-1 {
+    border-right: solid 1px #000;
+    border-top: solid 2px #000;
+}
+
+#more-2 {
+    border-left: solid 1px #000;
+    border-bottom-left-radius: 32px;
+}
+
+#more-3 {
+    border-top: none;
+    border-left: solid 1px #000;
+    border-bottom-left-radius: 32px;
+}
+    
+
+
+.gen-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto";
+    background-color: #fff;   
     color: #000;
     font-size: large;
-    border-bottom: solid 1px #000;
-    border-top: solid 1px #000;
+    border-bottom: solid 2px #000;
+    border-top: solid 2px #000;
+    border-right: solid 2px #000;
 }
 
 .gallery-grid-item-big h2 {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 
@@ -325,6 +363,88 @@ nav a:hover {
 
 
 
+.tcg-container {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(22, 1fr);
+    background-color: #fff;
+    border-top: solid 2px #000;
+    border-bottom: solid 1px #000;
+    border-left: solid 1px #000;
+    grid-area: 2 / 1 / 9 / 9;
+}
+
+.tcg-mini-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #000;
+}
+
+.gallery-tcg-image {
+    max-width: 180px;
+    max-height: 251px;
+}
+
+
+#tcg-image-1 {
+    grid-area: 1 / 1 / 12 / 8;
+    border-left: none;
+}
+
+#tcg-image-2 {
+    grid-area: 1 / 8 / 12 / 15;
+    border-right: none;
+}
+
+#tcg-image-3 {
+    grid-area: 12 / 1 / 23 / 8;
+    border-left: none;
+}
+
+#tcg-image-4 {
+    grid-area: 12 / 8 / 23 / 15;
+    border-right: none;
+}
+
+
+
+.art-image-container-1 {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    grid-area: 2 / 1 / 5 / 9;
+}
+
+.art-image-container-2 {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    grid-area: 6 / 1 / 9 / 9;
+}
+
+
+#art-images-image-1 {
+    max-width: 250px;
+    height: auto;
+}
+
+#art-images-image-2 {
+    max-width: 250px;
+    height: auto;
+}
+
+
+
+
+
+
+
+/* Test */
+
+
+
+
 
 
 
@@ -332,25 +452,37 @@ nav a:hover {
 /* Contact Page */
 
 .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     font-family: "Roboto";
-    height: 31.25rem;
-    display: inline-block;
-    margin-left: 25%;
+    width: 50%;
+    margin: auto;
+    margin-top: 2em;
+    gap: 2em;
 }
 
-.form-2 {
-    border-style: none;
-    margin-left: 0px;
-    margin-top: 1rem;
-    padding-left: 0px;
+.form-name-surname-email {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 30%;
 }
 
-.form-3 {
-    margin-top: 1rem;
+.form-gender {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
-.pad {
-    margin-top: 2rem;
+.form-continent {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.form-button {
+    align-self: center;
 }
 
 
@@ -360,12 +492,7 @@ nav a:hover {
 
 
 
-/* IDs */
 
-#left-in-footer {
-    margin-left: 25%;
-    /*Probably not exact, so fix later*/
-}
 
 
 
@@ -376,18 +503,19 @@ nav a:hover {
 /* Elements */
 
 main {
-    margin: 0em;
+    margin-top: 2em;
     padding: 75px 0px;
 }
 
 body {
     background-color: #ED9E75;
-    margin: 0em;
+    margin: 0;
 }
 
 header {
     background-color: #7E7E7E;
     margin-top: 0;
+    margin-bottom: 2em;
     padding: 1.5em;
 }
 
@@ -406,6 +534,10 @@ img {
 
 legend {
     padding: 0;
+}
+
+fieldset {
+    border: none;
 }
 
 
