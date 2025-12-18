@@ -14,25 +14,42 @@
 
 /* Colors */
 
+:root {
+    --torkoal-orange: #ed9e75;
+    --torkoal-red: #d95560;
+    --torkoal-gray: #7e7e7e;
+    --torkoal-brown: #c6a37f;
+    --torkoal-black: #000;
+    --torkoal-white: #fff;
+    --font-main: "Ultra";
+    --font-secondary: "Roboto";
+}
+
 .torkoal-orange {
-    color: #ED9E75;
+    color: var(--torkoal-orange);
 }
 
 .torkoal-red {
-    color: #D95560;
+    color: var(--torkoal-red);
 }
 
 .torkoal-gray {
-    color: #7E7E7E;
+    color: var(--torkoal-gray);
 }
 
 .torkoal-brown {
-    color: #C6A37F;
+    color: var(--torkoal-brown);
 }
 
 .torkoal-black {
-    color: #000;
+    color: var(--torkoal-black);
 }
+
+.torkoal-white {
+    color: var(--torkoal-white);
+}
+
+
 
 
 
@@ -40,18 +57,18 @@
 /* Header */
 
 .logo {
-    font-family: "Ultra";
+    font-family: var(--font-main);
     font-size: 2.5em;
     margin-left: 7.5rem;
     margin-right: 9.5625rem;
     text-decoration: none;
-    color: #ED9E75;
+    color: var(--torkoal-orange);
 }
 
 .header-category {
-    font-family: "Ultra";
+    font-family: var(--font-main);
     font-size: 1.5em;
-    color: #000;
+    color: var(--torkoal-black);
     text-decoration: none;
     margin-right: 9.5625rem;
 }
@@ -60,7 +77,7 @@ nav a:hover,
 .gallery-grid-item-big a:hover,
 footer a:hover {
     text-decoration: underline;
-    text-decoration-color: #ED9E75;
+    text-decoration-color: var(--torkoal-orange);
     text-decoration-thickness: 0.25rem;
 }
 
@@ -78,9 +95,9 @@ footer a:hover {
 }
 
 .footer-category {
-    font-family: "Roboto";
+    font-family: var(--font-secondary);
     font-size: 1em;
-    color: #fff;
+    color: var(--torkoal-white);
     text-decoration: none;
 }
 
@@ -93,7 +110,7 @@ footer a:hover {
 
 .active {
     text-decoration: underline;
-    text-decoration-color: #D95560;
+    text-decoration-color: var(--torkoal-red);
     text-decoration-thickness: 0.25rem; 
 }
 
@@ -124,7 +141,7 @@ footer a:hover {
 .frame {
     border-style: solid;
     border-radius: 57px;
-    border-color: #000; 
+    border-color: var(--torkoal-black); 
 }
 
 
@@ -136,11 +153,11 @@ footer a:hover {
 /* Images */
 
 .torkoal-main {
-    
+    /* Media query */
 }
 
 .torkoal-mini {
-    background-color: #fff;
+    background-color: var(--torkoal-white);
 }
 
 
@@ -158,17 +175,25 @@ footer a:hover {
 
 .cta {
     border-style: solid;
-    border-color: #fff;
+    border-color: var(--torkoal-white);
     border-radius: 33px;
-    background-color: #D95560;
-    font-family: "Ultra";
+    background-color: var(--torkoal-red);
+    color: var(--torkoal-black);
+    font-family: var(--font-main);
     text-decoration: none;
     text-transform: capitalize;
+    transition-property: background color;
+    transition-duration: 1s;
 }
 
 .cta-main {
-    padding: 1em 5em;
-    font-size: larger;
+    padding: 0.5em 2.5em;
+    font-size: x-large;
+}
+
+.cta:hover {
+    background-color: var(--torkoal-black);
+    color: var(--torkoal-red);
 }
 
 
@@ -201,6 +226,31 @@ footer a:hover {
 }
 
 
+#left-frame {
+    background-image: url(images/torkoal.jpg);
+    background-size: cover;
+    overflow: hidden;
+    border: solid var(--torkoal-black);
+    border-radius: 57px;
+    justify-content: center;
+}
+
+#hero-text {
+    display: flex;
+    justify-content: center;
+    background-color: var(--torkoal-red);
+    font-family: var(--font-main);
+    font-size: x-large;
+    text-align: center;
+    max-width: 40%;
+    max-height: 20%;
+    padding: 0.5em 1em;
+    margin-left: 45%;
+    margin-top: 5%;
+    /* Take some of this to another p-specific class and make it a flex-item within the button/frame itself */
+}
+
+
 .home-mini-torkoal-flexbox {
     display: flex;
     justify-content: space-between;
@@ -212,7 +262,7 @@ footer a:hover {
     display: flex;
     justify-content: center;
     flex: 1;
-    font-family: "Ultra";
+    font-family: var(--font-main);
     margin: 0;
 }
 
@@ -221,7 +271,7 @@ footer a:hover {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    font-family: "Ultra";
+    font-family: var(--font-main);
     font-size: x-large;
     margin: 0;
     flex: 2;
@@ -261,7 +311,7 @@ footer a:hover {
     grid-template-rows: repeat(9, 1fr);
     width: 30%;
     max-height: 816.6px;
-    background-color: #C6A37F;
+    background-color: var(--torkoal-brown);
     border-style: solid;
     border-radius: 33px; 
 }
@@ -279,33 +329,33 @@ footer a:hover {
     justify-content: center;
     align-items: center;
     grid-area: 9 / 1 / 9 / 9;
-    border-top: solid 1px #000;
+    border-top: solid 1px var(--torkoal-black);
     border-bottom: none;
     font-size: 2em;
-    font-family: "Roboto";
-    color: #000;
-    background-color: #C6A37F;
+    font-family: var(--font-secondary);
+    color: var(--torkoal-black);
+    background-color: var(--torkoal-brown);
     border-bottom-left-radius: 33px;
     border-bottom-right-radius: 32px;
 }
 
 #gen-option-top {
-    border-top: solid 3.5px #000;
+    border-top: solid 3.5px var(--torkoal-black);
 }
 
 #more-1 {
-    border-right: solid 1px #000;
-    border-top: solid 2px #000;
+    border-right: solid 1px var(--torkoal-black);
+    border-top: solid 2px var(--torkoal-black);
 }
 
 #more-2 {
-    border-left: solid 1px #000;
+    border-left: solid 1px var(--torkoal-black);
     border-bottom-left-radius: 32px;
 }
 
 #more-3 {
     border-top: none;
-    border-left: solid 1px #000;
+    border-left: solid 1px var(--torkoal-black);
     border-bottom-left-radius: 32px;
 }
     
@@ -315,13 +365,13 @@ footer a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Roboto";
-    background-color: #fff;   
-    color: #000;
+    font-family: var(--font-secondary);
+    background-color: var(--torkoal-white);   
+    color: var(--torkoal-black);
     font-size: large;
-    border-bottom: solid 2px #000;
-    border-top: solid 2px #000;
-    border-right: solid 2px #000;
+    border-bottom: solid 2px var(--torkoal-black);
+    border-top: solid 2px var(--torkoal-black);
+    border-right: solid 2px var(--torkoal-black);
 }
 
 .gallery-grid-item-big h2 {
@@ -367,10 +417,10 @@ footer a:hover {
     display: grid;
     grid-template-columns: repeat(14, 1fr);
     grid-template-rows: repeat(22, 1fr);
-    background-color: #fff;
-    border-top: solid 2px #000;
-    border-bottom: solid 1px #000;
-    border-left: solid 1px #000;
+    background-color: var(--torkoal-white);
+    border-top: solid 2px var(--torkoal-black);
+    border-bottom: solid 1px var(--torkoal-black);
+    border-left: solid 1px var(--torkoal-black);
     grid-area: 2 / 1 / 9 / 9;
 }
 
@@ -378,7 +428,7 @@ footer a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 2px #000;
+    border: solid 2px var(--torkoal-black);
 }
 
 .gallery-tcg-image {
@@ -412,14 +462,14 @@ footer a:hover {
 .art-image-container-1 {
     display: flex;
     justify-content: center;
-    background-color: #fff;
+    background-color: var(--torkoal-white);
     grid-area: 2 / 1 / 5 / 9;
 }
 
 .art-image-container-2 {
     display: flex;
     justify-content: center;
-    background-color: #fff;
+    background-color: var(--torkoal-white);
     grid-area: 6 / 1 / 9 / 9;
 }
 
@@ -455,7 +505,7 @@ footer a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    font-family: "Roboto";
+    font-family: var(--font-secondary);
     width: 50%;
     margin: auto;
     margin-top: 2em;
@@ -508,19 +558,19 @@ main {
 }
 
 body {
-    background-color: #ED9E75;
+    background-color: var(--torkoal-orange);
     margin: 0;
 }
 
 header {
-    background-color: #7E7E7E;
+    background-color: var(--torkoal-gray);
     margin-top: 0;
     margin-bottom: 2em;
     padding: 1.5em;
 }
 
 footer {
-    background-color: #7E7E7E;
+    background-color: var(--torkoal-gray);
     margin-top: 2rem;
     margin-bottom: 0;
     padding: 1.5em;
