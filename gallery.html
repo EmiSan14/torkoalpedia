@@ -8,14 +8,23 @@
         <link rel="icon" href="css/images/favicon2.ico">
     </head>
 
-    <body>
+    <body class="page-switch">
         <header>
-            <nav>
-                <a href="index.html" class="logo" >Tor<span class="torkoal-red">koal</span><span class="torkoal-black">pedia</span>
-                </a>
-                <a href="index.html" class="header-category">Home</a>
-                <a href="#" class="header-category active">Gallery</a>
-            </nav>    
+
+            <nav class="nav-flexbox">
+                <div class="nav-flexbox-mini" id="logo">
+                    <a href="index.html" class="logo" >Tor<span class="torkoal-red">koal</span><span class="torkoal-black">pedia</span>
+                    </a>
+                </div>
+                <div class="nav-flexbox-mini" id="nav-categories">
+                    <a href="index.html" class="header-category">Home</a>
+                    <a href="gallery.html" class="header-category active">Gallery</a>
+                </div>
+                <div class="nav-flexbox-mini" id="searchbar">
+                    <p class="placeholder-searchbar">Searchbar Placeholder</p>
+                </div>
+            </nav>  
+
         </header>
 
         <main class="gallery-flexbox">
