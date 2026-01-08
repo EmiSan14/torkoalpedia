@@ -29,9 +29,9 @@
         </header>
 
         <main>
-            <fieldset class="form frame pad">
+            <form class="form frame pad">
+                <legend>Sign up to stay up to date:</legend>
                 <fieldset class="form-name-surname-email">
-                    <legend>Sign up to stay up to date:</legend>
                     <label for="firstname">First name:</label>
                     <input type="text" name="firstname" id="firstname">
                     <label for="lastname">Last name:</label>
@@ -40,37 +40,39 @@
                     <input type="email" name="email" id="email">
                 </fieldset>
 
-                <fieldset class="form-gender">
-                    <legend>Gender: (optional)</legend>
-                    <label for="male">Male</label>
-                    <input type="radio" name="gender" value="male" id="male" />
-                    <label for="female">Female</label>
-                    <input type="radio" name="gender" value="female" id="female" />
-                    <label for="non-binary">Non-binary</label>
-                    <input type="radio" name="gender" value="non-binary" id="non-binary" />
-                    <label for="other">Other</label>
-                    <input type="radio" name="gender" value="other" id="other" />
-                    <label for="prefer-not-to-say">Prefer not to say</label>
-                    <input type="radio" name="gender" value="prefer-not-to-say" id="prefer-not-to-say" />
-                </fieldset>
+                <div class="form-second-row">
+                    <fieldset class="form-gender">
+                        <legend>Gender: (optional)</legend>
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" value="male" id="male" />
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" value="female" id="female" />
+                        <label for="non-binary">Non-binary</label>
+                        <input type="radio" name="gender" value="non-binary" id="non-binary" />
+                        <label for="other">Other</label>
+                        <input type="radio" name="gender" value="other" id="other" />
+                        <label for="prefer-not-to-say">Prefer not to say</label>
+                        <input type="radio" name="gender" value="prefer-not-to-say" id="prefer-not-to-say" />
+                    </fieldset>
 
-                <div class="form-continent">
-                    <label for="continent">Where are you from:</label>
-                    <select class="form-3" name="continent" id="continent">
-                    <option value="europe">Europe</option>
-                    <option value="africa">Africa</option>
-                    <option value="north-america">North-America</option>
-                    <option value="south-america">South-America</option>
-                    <option value="asia">Asia</option>
-                    <option value="oceania">Oceania</option>
-                </select>
+                    <fieldset class="form-continent">
+                        <label for="continent">Where are you from:</label>
+                            <select class="form-3" name="continent" id="continent">
+                            <option value="europe">Europe</option>
+                            <option value="africa">Africa</option>
+                            <option value="north-america">North-America</option>
+                            <option value="south-america">South-America</option>
+                            <option value="asia">Asia</option>
+                            <option value="oceania">Oceania</option>
+                        </select>
+                    </fieldset>
                 </div>
 
                 <fieldset class="form-button">
                     <label for="submit"></label> 
                     <input type="submit" class="cta cta-main" value="submit" id="submit" />
                 </fieldset> 
-            </fieldset>
+            </form>
         </main>
 
         <footer>
