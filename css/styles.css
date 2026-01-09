@@ -621,6 +621,12 @@ footer a:hover {
 
 /* Contact Page */
 
+.footer-fix {
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
 .form {
     display: flex;
     flex-wrap: wrap;
